@@ -1,0 +1,21 @@
+{
+    "name": "sqlite-debugger",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash"
+            },
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode-remote.remote-containers",
+                "christiancollen.SQLite"
+            ]
+        }
+    },
+    "remoteUser": "root"
+
+}

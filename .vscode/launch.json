@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug SQLite App",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/usr/src/sqlite/sqlite_app",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "/usr/src/sqlite",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "preLaunchTask": "build",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "stopAtConnect": true,
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

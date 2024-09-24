@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "-I.",
+                "-o", "sqlite_app",
+                "main.c",   // Exclude "shell.c" here
+                "sqlite3.c",
+                "-lpthread",
+                "-ldl"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Build the SQLite application"
+        }
+    ]
+}
