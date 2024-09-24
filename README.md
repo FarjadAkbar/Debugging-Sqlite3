@@ -38,6 +38,8 @@ The Dev Container will automatically build using the provided `Dockerfile`.
 - Set breakpoints in your code as needed.
 - Run the build task in VS Code using `Ctrl + Shift + B`.
 - Start debugging by pressing `F5`.
-![start-vscode](image-1.png)
 
 The debugger will attach, and you can step through the code line by line to inspect variables and analyze the flow.
+
+
+![output](image-1.png)
